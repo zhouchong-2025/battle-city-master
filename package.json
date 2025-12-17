@@ -5,7 +5,7 @@
   "author": "Shi Feichao <842351815@qq.com> (https://shinima.github.io)",
   "scripts": {
     "start": "webpack-dev-server --mode=development",
-    "build": "webpack --mode=production && copyfiles sound/* dist"
+    "build": "webpack --mode=production && cp -r sound dist/ && cp -r resources dist/"
   },
   "dependencies": {
     "@types/history": "^4.6.2",
